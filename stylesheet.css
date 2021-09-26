@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+}
+.wrapper{
+    max-width: 1030px;
+    margin: auto;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    height:auto;
+    max-height: 150px;
+    border-bottom: thick double greenyellow;
+}
+.weblogo{
+    margin: 20px 20px 20px 5px;
+    width: 10%;
+    height:auto;
+    max-height: 100px;
+}
+.titlearea{
+    display: grid;
+    grid-template-rows: 60px 90px; 
+    width: 30%;
+}     
+.title{
+    font-size: 32px;
+    color: #2a292b;
+    font-weight: 600;
+}
+.phrase{
+    font-size: 24px;
+    color: #34db28;
+    font-weight: 400;
+    padding-left: 30px;
+    min-width: 270px;
+}
+.menu{
+    display: grid;
+    grid-template-rows: 2;
+    width: 60%;
+    font-weight: 600;
+}
+.menu p{
+    cursor: pointer;
+}
+.menu p:hover{
+    opacity: 0.5;
+}
+.links{
+    grid-row: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.actions{
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 1fr 40px;
+    grid-gap: 30px;
+}
+.login{
+    grid-column: 1;
+    text-align: right;
+}
+
+/* ---------FORM--------------*/
+.formContainer {
+    display: none;
+    margin: 20px 0 0 22%;
+    width: 50%;
+    min-height: 400px;
+    border-radius: 20px;
+    border: 6px solid mediumblue;
+    box-shadow: 30px 20px 10px darkgray;
+    padding: 20px;
+    background-color: #fff;
+ }
+.userentry{
+    width: 100%;
+    border: none;
+    text-align: left;
+    padding: 50px 0 30px 0;
+}
+.userentry input[type=text] {
+    height: 40px;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+    border-radius: 20px;
+    border: none;
+    background: rgb(215, 220, 223);
+}
+.forgot{
+    cursor: pointer;
+    text-align: end;
+}
+.useractions{
+    display: flex;
+}
+.enterbtn {
+   margin: 20px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    background-color: #093f79;
+    color: #fff;
+    cursor: pointer;
+    width: 90px;
+}
+.create-account{
+    margin-top: 25px;
+    font-weight: 200;
+    cursor: pointer;
+}

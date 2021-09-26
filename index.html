@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Side Form Validation</title>
+    <link rel = 'stylesheet' href = 'stylesheet.css'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <div class='wrapper'>
+        <div class = 'header'>
+            <img class = 'weblogo' src = 'logo.png'></img>
+            <div class = 'titlearea'>
+                <p class = 'title'>Green Space:</p>
+                <p class = 'phrase'>providing for the world</p>
+            </div>
+            <div class = 'menu'>
+                <div class = 'links'>
+                    <p class = 'navitem about'>About</p>
+                    <p class = 'navitem shop'>Shop</p>
+                    <p class = 'navitem contact'>Contact</p>
+                </div>
+                <div class = 'actions'>
+                    <p class = 'navitem login'>Log In </p>
+                    <p class = 'navitem cart material-icons'>shopping_cart</p>
+                </div>
+            </div>
+        </div>
+    <div class = 'content'>
+        <form  class = 'formContainer existing-user'>
+            <div class = 'userentry'>
+                <input type = 'text' id = 'name' placeholder='email' >
+                <input type = 'text' id = 'password' placeholder='password'>
+            </div>
+            <p class = 'forgot'><u>Forgot your password?</u></p>
+            <div class = 'useractions'>
+                <button type='submit' id ='signin' class = 'enterbtn'>Sign In</button>
+                <p class = 'create-account'>Create Account</p>
+            </div>
+        </form>
+            
+        <form class = 'formContainer new-user'>
+            <div class = 'userentry'>
+                <input type = 'text' id = 'name' placeholder='First Name' >
+                <input type = 'text' id = 'email' placeholder='Last Name' >
+                <input type = 'text' id = 'email' placeholder='Email' >
+                <label for = 'password'  >Password must be at least 8 characters long</label>
+                <input type = 'text' id = 'password' placeholder='password'>
+                <input type = 'text' id = 'passwordconfirm'placeholder='confirm password' >
+            </div>
+            <div>
+            <button type='submit' id ='signup' class = 'enterbtn' >Create</button>
+            <button type='submit' id ='return' class = 'enterbtn' >Return to Store</button>
+            </div>
+        </form>
+    </div>
+</div>   
+    <script src="index.js"></script>  
+</body>
+</html>
