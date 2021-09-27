@@ -1,39 +1,45 @@
-const content = document.querySelector('.content')
-const form = document.querySelector('.formContainer');
 
-const existingform = document.querySelector('.existing-user');
-//form.addEventListener('click', () => form.style.display='none');
+const pagecontent = document.querySelector('.page-content');
+const form = document.querySelector('.existing-user');
+const about = document.querySelector('.about-page');
+    about.style.display = 'none';
+const shop = document.querySelector('.shop-page');
+    shop.style.display = 'none';
+const contact = document.querySelector('.contact-page');
+    contact.style.display = 'none';
+const createform = document.querySelector('.new-user');
 
+const create = document.querySelector('.create-account');
+    create.addEventListener('click', () =>{
+        displayPage(createform);
+    });
 const login = document.querySelector('.login');
     login.addEventListener('click', () =>{
-        clearContent('.content');
-        existingform.style.display='block';
+          displayPage(form); 
     });
- const create = document.querySelector('.create-account');
-     create.addEventListener('click', () =>{
-        clearContent('.content');
-        const createform = document.querySelector('.new-user');
-        createform.style.display='block';
-     });
-
-const about = document.querySelector('.about')
-    about.addEventListener('click', () => {
-        clearContent('.content');
-       content.textContent = 'About';
+const navabout = document.querySelector('.about')
+    navabout.addEventListener('click', () => {
+        displayPage(about);
     });
-const shop = document.querySelector('.shop')
-    shop.addEventListener('click', () => {
-        clearContent('.content');
-        content.textContent = 'Shop';
+const navshop = document.querySelector('.shop')
+    navshop.addEventListener('click', () => {
+        displayPage(shop);
     });
-const contact = document.querySelector('.contact')
-    contact.addEventListener('click', () => {
-        clearContent('.content');
-        content.textContent = 'Contact';
+const navcontact = document.querySelector('.contact')
+    navcontact.addEventListener('click', () => {
+        displayPage(contact);
     });
 
-function clearContent(element){
-    document.querySelector(element).innerHTML = '';
-}   
-
+function displayPage(page){
+   const items = document.querySelectorAll('.pageitem');
+        
+    if (page.style.display === 'none' ){
+        items.forEach(item => {
+            item.style.display = 'none';
+        })
+        page.style.display = 'block';
+    } else {
+        page.style.display = 'none';
+    }
+}
 
