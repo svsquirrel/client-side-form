@@ -21,6 +21,7 @@
                     <p class = 'navitem about'>About</p>
                     <p class = 'navitem shop'>Shop</p>
                     <p class = 'navitem contact'>Contact</p>
+                    
                 </div>
                 <div class = 'actions'>
                     <p class = 'navitem login'>Log In </p>
@@ -34,30 +35,31 @@
             <div class = 'shop-page pageitem'>Shop</div>
             <div class = 'contact-page pageitem'>Contact</div>
         </div>
-        <form  class = 'formContainer existing-user pageitem'>
+        <form  class = 'formContainer existing-user pageitem' novalidate>
             <div class = 'userentry'>
-                <input type = 'text' id = 'name' placeholder='email' >
-                <input type = 'text' id = 'password' placeholder='password'>
+                <input type = 'email' class = 'email' placeholder='email'>
+                <input type = 'password' class = 'password' placeholder='password'required minlength='8'>
             </div>
             <p class = 'forgot'><u>Forgot your password?</u></p>
             <div class = 'useractions'>
-                <button type='submit' id ='signin' class = 'enterbtn'>Sign In</button>
+                <button type='submit' class = 'enterbtn signin'>Sign In</button>
                 <p class = 'create-account'>Create Account</p>
+               
             </div>
         </form>
             
-        <form class = 'formContainer new-user page-item'>
+        <form class = 'formContainer new-user pageitem'novalidate>
             <div class = 'userentry'>
-                <input type = 'text' id = 'name' placeholder='First Name' >
-                <input type = 'text' id = 'email' placeholder='Last Name' >
-                <input type = 'text' id = 'email' placeholder='Email' >
+                <input type = 'text' id = 'firstname' placeholder='First Name' >
+                <input type = 'text' id = 'lastname' placeholder='Last Name' >
+                <input type = 'text' class = 'email' placeholder='Email' >
                 <label for = 'password'  >Password must be at least 8 characters long</label>
-                <input type = 'text' id = 'password' placeholder='password'>
-                <input type = 'text' id = 'passwordconfirm'placeholder='confirm password' >
+                <input type = 'text' class = 'password' placeholder='password'>
+                <input type = 'text' class = 'passwordconfirm'placeholder='confirm password' >
             </div>
             <div>
-            <button type='submit' id ='signup' class = 'enterbtn' >Create</button>
-            <button type='submit' id ='return' class = 'enterbtn' >Return to Store</button>
+            <button type='submit' class = 'enterbtn signup' >Create</button>
+            <input type='button' class = 'enterbtn return' value = 'Return to Store'>
             </div>
         </form>
         
